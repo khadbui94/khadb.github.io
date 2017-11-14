@@ -1,0 +1,320 @@
+/**Navbar
+Reference: W3Schools**/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    background: #4c9cf1;
+    font-weight: bold;
+    border-bottom: 1px solid #4c9cf1;
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 610px;
+    height: 40px;
+}
+
+.navbar li {
+    display: inline;
+    float: left;
+}
+
+.navbar a {
+    color: #fff;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.navbar li a {
+    border-right: 1px solid white;
+}
+
+.navbar li:first-child a {
+    border-left: 1px solid white;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: #f3f3f3;
+}
+
+.navbar a#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .navbar {
+        border-bottom: 0;
+    }
+    .navbar ul {
+        display: none;
+        height: auto;
+    }
+    .navbar a#toggle {
+        display: block;
+        background-color: #4c9cf1;
+        width: 100%;
+        position: relative;
+    }
+    .navbar a#toggle:after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+}
+
+
+/***********/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.1em;
+    font-family: "Time New Roman", Georgia, Serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-top: 16px;
+    margin-top: 30px;
+}
+
+#profile-img {
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+center {
+    display: block;
+    text-align: -webkit-center;
+}
+
+.center-tab {
+    width: 80%;
+    display: block;
+    text-align: left;
+    height: auto;
+}
+
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 20px auto;
+}
+
+#about {
+    margin-top: 10px;
+    background-color: #E0E0E0;
+}
+
+.section {
+    padding-top: 15px;
+}
+
+.section-header {
+    padding-top: 50px;
+    border-bottom: 2px solid blue;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.section:after,
+.section:before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#resume {
+    margin-top: 10px;
+}
+
+#resume .tab {
+    width: 48.88%;
+    float: left;
+    padding: 5px;
+    text-align: left;
+}
+
+#resume img {
+    height: auto;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#education {
+    background-color: beige;
+}
+
+.list {
+    list-style-type: circle;
+    margin-left: 30px;
+    text-align: left;
+    line-height: 30px;
+}
+
+#experience {
+    background-color: #263238;
+    color: white;
+    width: 100%;
+}
+
+#experience .tab-year {
+    width: 16.66%;
+    float: left;
+    padding: 5px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+#experience .tab-description {
+    width: 63.33%;
+    float: left;
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid white;
+}
+
+#skills {
+    background-color: #ECEFF1;
+}
+
+#skills h5 {
+    width: 110px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid lgihtblue;
+    border-radius: 2px;
+    margin-right: 20px;
+    margin-top: 2px;
+    background-color: #337ab7;
+    color: white;
+}
+
+#projects {
+    background-color: #f3f3f3;
+}
+
+#projects li {
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 80%;
+}
+
+#projects h4 {
+    color: white;
+    font-size: 14pt;
+    background-color: #337ab7;
+}
+
+#projects p {
+    height: auto;
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin-bottom: 24px;
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 920px) {
+    #resume .tab {
+        width: 100%;
+    }
+    #experience .tab-year {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+    #experience .tab-description {
+        width: 100%;
+        display: block;
+        text-align: -webkit-center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1000px;
+        margin: auto;
+    }
+}
+
+#contact {
+    border-radius: 4px;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #f4f4f4;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+.submitBtn {
+    background-color: #337ab7;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #444;
+    color: white;
+    font-weight: bold;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    background-color: #337ab7;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
+    display: block;
+}
+
+#topBtn:hover {
+    background-color: #444;
+}
