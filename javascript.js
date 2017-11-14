@@ -1,0 +1,5 @@
+/*Reference: W3Schools.com*/
+function toTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
